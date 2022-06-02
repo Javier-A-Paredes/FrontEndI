@@ -1,18 +1,44 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
 .header-top {
     background-color: #222222;
-    color: #F3F3F3;    
+    color: #F3F3F3;
+}
+
+.navlist {
+    list-style-type: none;
 }
 
 .header-bot {
     background-color: #F0A83E;
+    color:#FFFFFF;    
 }
 
+.titulo-banner {
+    color: #3C2313;
+}
+
+.subtitulo-banner {
+    color: #3C2313;
+}
+
+.boton-banner {
+    background-color: #F0A83E;
+    border: 0px;
+    border-radius: 5px;
+    color: #FFFFFF
+}
 
 .sociales {
     background-color: #3C2313;
+    color: #FFFFFF;
 }
 
 .derechos {
     background-color: #222222;
+    color: #FFFFFF;
+    text-align: center;
 }
-

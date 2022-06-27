@@ -15,12 +15,14 @@
 
         <div class="header-top">
             <p>Grandes ofertas en comederos</p>
-            <select name="" id="">
-                <option value="">Español</option>
-            </select>
-            <select>
-                <option value="">ARG$</option>
-            </select>
+            <div class="selectores">
+                <select name="" id="">
+                    <option value="">Español</option>
+                </select>
+                <select>
+                    <option value="">ARG$</option>
+                </select>
+            </div>
         </div>
 
         <div class="header-bot">
@@ -40,52 +42,98 @@
     <main>
         <h1></h1>
         <section class="banner">
-            <img src="img/ImagenBowlbackground.jpg" alt="Imagen de background bowl de comida">
-            <h2 class="titulo-banner">¡Es un placer tenerte aqui!</h2>
-            <h3 class="subtitulo-banner">¡Comederos en descuento!</h3>
-            <button class="boton-banner">COMEDEROS</button>
+            <article class="content-banner">
+                <h2 class="titulo-banner">¡Es un placer tenerte aqui!</h2>
+                <h3 class="subtitulo-banner">¡Comederos en descuento!</h3>
+                <button class="boton-banner">COMEDEROS</button>
+            </article>
         </section>
-        <section>
-            <img src="img/pawprint2.png" alt="Imagen de una patita">
-            <h2>Productos destacados</h2>
-            <nav>
-                <p>comederos - accesorios - comida</p>
-                <ul>
-                    <li><a href="">Comederos</a></li>
-                    <li><a href="">Accesorios</a></li>
-                    <li><a href="">Comida</a></li>
-                </ul>
-            </nav>
 
-            <article>
-                <img src="img/churrasquito.png" alt="Imagen juguete churrasquito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
+        <section class="seccion-productos">
+            <div class="nav-productos">
+                <img src="img/pawprint2.png" alt="Imagen de una patita">
+                <h2>Productos destacados</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Comederos</a></li>
+                        <li>-</li>
+                        <li><a href="">Accesorios</a></li>
+                        <li>-</li>
+                        <li><a href="">Comida</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="productos">
+                <article>
+                    <img src="img/churrasquito.png" alt="Imagen juguete churrasquito">
+                    <p>Juguete Churrasquito</p>
+                    <p>$150</p>
+                </article>
+                <article>
+                    <img src="img/comedero.png" alt="Imagen comedero">
+                    <p>Comedero para perro</p>
+                    <p>$250</p>
+                </article>
+                <article>
+                    <img src="img/Huesito.png" alt="Imagen huesito">
+                    <p>Juguete Huesito</p>
+                    <p>$650</p>
+                </article>
+            </div>
+        </section>
+        <section class="contacto">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre y Apellido">
+                <input type="text" placeholder="Ingresá tu correo electrónico">
+                <input type="text" placeholder="Teléfono">
+            </form>
+            <div class="botones">
+                <button id="boton-reset">Resetear</button>
+                <button id="boton-enviar">Enviar</button>
+            </div>
+        </section>
+
+        <section class="suscripcion">
+            <article class="sus-izquierda">
+                <img src="img/enviar-correo.png" alt="Imagen que representa un correo enviandose">
+                <h3>Suscríbete para más novedades</h3>
             </article>
-            <article>
-                <img src="img/comedero.png" alt="Imagen comedero">
-                <p>Comedero para perro</p>
-                <p>$250</p>
-            </article>
-            <article>
-                <img src="img/Huesito.png" alt="Imagen huesito">
-                <p>Juguete Huesito</p>
-                <p>$650</p>
+            <article class="sus-derecha">
+                <input type="text" placeholder="Ingresá tu correo electrónico">
+                <button>Suscribirme</button>
             </article>
         </section>
     </main>
 
     <footer>
         <section class="sociales">
-            <img src="img/location.png" alt="imagen de localidad">
-            <h3>Localidad</h3>
-            <p>Calle - provincia</p>
-            <img src="img/telefono.png" alt="imagen de telefono">
-            <h3>Teléfono</h3>
-            <p>Número de teléfono</p>
-            <img src="img/mail.png" alt="imagen de email">
-            <h3>Correo Electrónico</h3>
-            <p>Dirección de correo</p>
+            <article class="info-sociales">
+
+                <div class="descripcion-sociales">
+                    <img src="img/location.png" alt="imagen de localidad">
+                    <div>
+                        <h3>Localidad</h3>
+                        <p>Calle - provincia</p>
+                    </div>
+                </div>
+                <div class="descripcion-sociales">
+                    <img src="img/telefono.png" alt="imagen de telefono">
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>Número de teléfono</p>
+                    </div>
+                </div>
+                <div class="descripcion-sociales">
+                    <img src="img/mail.png" alt="imagen de email">
+                    <div>
+                        <h3>Correo Electrónico</h3>
+                        <p>Dirección de correo</p>
+                    </div>
+                </div>
+            </article>
             <img src="img/logo2.png" alt="logo en la seccion sociales">
         </section>
         <p class="derechos">Todos los derechos reservados Front End</p>

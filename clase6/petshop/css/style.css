@@ -1,43 +1,299 @@
 * {
     font-family: 'Roboto', sans-serif;
-    ;
+    box-sizing: border-box;
 }
 
+/* ESTILOS GENERALES */
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: 0px;
+}
+
+main {
+    margin: 0px;
+}
+
+h1 {
+    margin: 0;
+}
+
+input {
+    border: 0px;
+}
+
+button {
+    border: 0px;
+}
+
+/* ----------------- ESTILOS HEADER -------------------- */
 .header-top {
     background-color: #222222;
     color: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
 
-.navlist {
-    list-style-type: none;
+select {
+    background-color: #222222;
+    outline: none;
+    color: white;
 }
 
 .header-bot {
     background-color: #F0A83E;
-    color:#FFFFFF;    
+    /* color: #FFFFFF; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bot img {
+    padding-left: 10px;
+}
+
+.navlist {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.navlist ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlist a {
+    color: white;
+}
+
+/* ---------------------ESTILOS BANNER------------------ */
+.banner {
+    display: flex;
+    background-image: url('../img/ImagenBowlbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    text-align: center;
+    justify-content: space-around;
+    padding-right: 100px;
+    margin-top: 0px;
 }
 
 .titulo-banner {
+    background-color: white;
+    border-radius: 10px;
     color: #3C2313;
+    font-size: 35px;
+    padding: 25px;
 }
 
 .subtitulo-banner {
     color: #3C2313;
+    font-size: 25px;
 }
 
 .boton-banner {
     background-color: #F0A83E;
     border: 0px;
     border-radius: 5px;
-    color: #FFFFFF
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 20px;
 }
 
+/* -----------------ESTILOS PRODUCTOS--------------- */
+
+.seccion-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    margin-bottom: 100px;
+}
+
+.nav-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-productos nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.nav-productos li {
+    display: inline;
+    padding: 15px;
+}
+
+.nav-productos a {
+    color: #666666;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+}
+
+.productos article {
+    padding: 10px;
+}
+
+/* ---------------ESTILOS FORMULARIO CONTACTO----------------- */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
+}
+
+
+.contacto input {
+    background-color: #3C2313;
+    color: white;
+    border-radius: 15px;
+    margin: 5px;
+    height: 40px;
+    width: 20%;
+    padding-left: 10px;
+    font-size: 9px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    margin-bottom: 40px;
+
+}
+
+#boton-reset {
+    background-color: #8A8787;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+#boton-enviar {
+    background-color: #F0A83E;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+/* ---------------ESTILOS SUSCRIPCIÓN----------------- */
+.suscripcion {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.suscripcion article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sus-izquierda {
+    width: 20%;
+    color:white;
+}
+
+.sus-derecha {
+    width: 25%;
+}
+
+.sus-derecha input {    
+    color: white;
+    border-radius: 15px;
+    margin: 5px;
+    height: 40px;
+    width: 80%;
+    padding-left: 10px;
+    font-size: 9px;
+}
+
+.sus-derecha button {
+    background-color: #3C2313;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    font-size: 9px;
+}
+
+/* ---------------ESTILOS FOOTER----------------- */
+
+/* ---------------ESTILOS INFO SOCIALES------------------ */
+
 .sociales {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #3C2313;
     color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;   
+}
+
+.info-sociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 17%;
+}
+
+.descripcion-sociales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .derechos {
+    margin: 0px;
+    padding: 5px;
     background-color: #222222;
     color: #FFFFFF;
     text-align: center;

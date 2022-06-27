@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    width: 99.2vw;
+    background-image: url("./img/bg-simplify-section-desktop.svg");
+    margin: 0px;
+}
+
+/* ############## HEADER ############## */
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+header nav ul li {
+    display: inline;
+    font-size: 15px;
+    padding: 1rem 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #242E52;
+}
+
+.hamburguer {
+    display: none;
+}
+
+/* ############## 3 BUTTONS MAIN ############## */
+header button {
+    background-color: #F3603B;
+    border-radius: 50px;
+    border: 0px;
+    box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.15);
+    color: white;
+    height: 3rem;
+    width: 10rem;
+}
+
+.section-top button,
+.section-bottom button {
+    background-color: #F3603B;
+    border-radius: 50px;
+    border: 0px;
+    box-shadow: 0 5px 5px -1px rgba(242, 97, 59, 0.5);
+    color: white;
+    height: 3rem;
+    width: 10rem;
+}
+
+header button:hover,
+.section-top button:hover,
+.section-bottom button:hover {
+    background-color: #fa9b83;
+    cursor: pointer;
+}
+
+
+
+/* ############## BODY ############## */
+/* ############## SECTION TOP ############## */
+.section-top {
+    margin-top: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section-top img {
+    width: 30vw;
+}
+
+.section-top h1 {
+    font-size: 40px;
+    width: 65%;
+    font-weight: 700;
+    color: #232C50;
+}
+
+.section-top p {
+    font-size: 15px;
+    width: 70%;
+}
+
+/* ############## SECTION MIDDLE ############## */
+
+.section-middle {
+    margin-top: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section-middle h2 {
+    font-size: 30px;
+    font-weight: 700;
+    width: 80%;
+    color: #232851;
+}
+
+.section-middle p {
+    font-size: 15px;
+    width: 70%;
+}
+
+.section-middle article:last-child {
+    width: 90%;
+}
+
+.section-middle dt {
+    color: #323851;
+    font-weight: 700;
+}
+
+.section-middle dd {
+    margin-left: 5rem;
+    color: #B3B2B7;
+}
+
+span button {
+    background-color: #F3603B;
+    border-radius: 50px;
+    border: 0px;
+    height: 2.5rem;
+    width: 4rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+/* ############## SECTION BOTTOM ############## */
+
+.section-bottom {
+    margin-top: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-bottom h2 {
+    font-size: 30px;
+    color: #242E53;
+}
+
+.section-bottom article {
+    width: 30%;
+}
+
+.reviews {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reviews h4 {
+    color: #3F4868;
+    font-weight: 700;
+}
+
+.reviews p {
+    color: #B9B9C1;
+}
+
+.reviews article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-bottom button {
+    margin: 50px auto;
+}
+
+.carousel-button {
+    display: none;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: rgb(238, 141, 50) 1px solid;
+    border-radius: 50%;
+}
+
+.selected {
+    /* border */
+    background-color: rgb(238, 141, 50);
+}
+
+.carousel {
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: rgb(238, 141, 50);
+}
+
+
+
+/* ############## BANNER BOTTOM ############## */
+
+.banner-bottom {
+    background-color: #F3613C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+
+}
+
+.banner-bottom h2 {
+    position: relative;
+    left: 10vw;
+    width: 20%;
+    color: white;
+}
+
+.banner-bottom button {
+    position: relative;
+    right: 10vw;
+    background-color: white;
+    border-radius: 50px;
+    border: 0px;
+    box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.15);
+    color: #F3603B;
+    height: 3rem;
+    width: 10rem;
+}
+
+.banner-bottom button:hover {
+    background-color: rgb(203, 195, 195);
+    cursor: pointer;
+}
+
+/* ############## FOOTER ############## */
+
+footer {
+    height: 12rem;
+    background-color: #1E1E26;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ############## FOOTER -FIRST CHILD ############## */
+footer article:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+}
+
+.sociales i {
+    color: white;
+    padding: 0.3rem;
+}
+
+/* ############## FOOTER - NAVBAR ############## */
+.footer-nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.footer-nav li {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ############## FOOTER - LAST CHILD ############## */
+footer article:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 11rem;
+}
+
+footer form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+}
+
+footer article:last-child input {
+    height: 3rem;
+    width: 14rem;
+    background-color: white;
+    border-radius: 50px;
+    border: 0px;
+    padding-left: 15px;
+    color: #A0A0A0;
+    font-weight: 600;
+}
+
+footer article:last-child button {
+    height: 3rem;
+    width: 5rem;
+    background-color: #F3603B;
+    border-radius: 50px;
+    border: 0px;
+}
+
+footer article:last-child button:hover {
+    background-color: #fa9b83;
+    cursor: pointer;
+}
+
+footer article:last-child p {
+    align-self: flex-end;
+    color: #8C8C94;
+    position: relative;
+    top: 1rem;
+    font-weight: 500;
+}
+
+/* ############## MEDIA QUERIES ############## */
+
+@media(max-width: 375px) {
+
+    /* ############## HEADER ############## */
+
+    header {
+        padding-top: 50px;
+    }
+
+    .hamburguer {
+        display: inline-block;
+    }
+
+    .hamburguer:hover {
+        cursor: pointer;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    /* ############## BODY ############## */
+    /* ############## SECTION TOP ############## */
+
+    .section-top {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .section-top h1 {
+        width: 95vw;
+
+    }
+
+    .section-top img {
+        width: 100vw;
+    }
+
+    .section-top p {
+        width: 80vw;
+        margin: 2rem auto;
+        color: #B3B2B7;
+    }
+
+    /* ############## SECTION MIDDLE ############## */
+
+    .section-middle {
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .section-middle h2 {
+        color: #232851;
+        margin: 1rem auto;
+    }
+
+    .section-middle p {
+        margin: auto;
+        width: 80vw;
+    }
+
+    .section-middle article:last-child {
+        margin-top: 3rem;
+        width: 95%;
+        text-align: start;
+    }
+
+    .section-middle dt {
+        background-color: rgb(245, 203, 193, 0.5);
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .section-middle dd {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    /* ############## SECTION BOTTOM ############## */
+
+    .section-bottom article:first-child,
+    .section-bottom article:last-child {
+        display: none;
+    }
+
+    .section-bottom article {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .carousel-button {
+        display: inline-block;
+    }
+
+    /* ############## BANNER BOTTOM ############## */
+
+    .banner-bottom {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 20rem;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .banner-bottom h2 {
+        position: static;
+        width: 80vw;
+    }
+
+    .banner-bottom button {
+        position: static;
+    }
+
+    /* ############## FOOTER ############## */
+
+    footer {
+        height: 35rem;
+        width: 100vw;
+    }
+
+    footer section {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        width: 100vw;
+    }
+
+    footer section article:first-child {
+        flex-direction: column-reverse;
+    }
+
+    footer section article:nth-child(2) {
+        margin-top: 0px;
+    }
+
+    footer section article {
+        position: relative;
+    }
+
+    footer section article:last-child p {
+        position: absolute;
+        top: 520px;
+        right: 50px
+    }
+}

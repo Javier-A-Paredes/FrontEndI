@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/* ##################  HEADER  ################## */
+header {
+    margin: 0px;
+    padding: 0px;
+}
+
+header h2 {
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+}
+
+header p {
+    background-color: #1CD1B0;
+    margin: 0;
+}
+
+header div {
+    background-color: #00669F;
+    display: flex;
+    align-items: center;
+}
+
+/* ##################  NAVBAR Y H1 ################## */
+
+.navbar {
+    background-color: #001D2D;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+h1 {
+    font-size: 40px;
+    margin: 1rem;
+}
+
+/* ################## COMIENZO FORM  ################## */
+form {
+    /* margin-top: 20px; */
+    align-items: center;
+    background-color: #00669F;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 50%;
+}
+
+form h4 {
+    font-size: 20px;
+    margin: 1rem;
+}
+
+form label {
+    margin-bottom: 1rem;
+}
+
+/* ################## FIELDSETS ################## */
+fieldset {
+    /* border: 1px solid black; */
+    align-items: center;
+    border: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+    padding: 10px auto;
+    padding: auto;
+    width: 100%;
+}
+
+fieldset div {
+    width: 20%;
+}
+
+/* ################## NOMBRE Y ESPECIE  ################## */
+.fs-1 input {
+    width: 17rem;
+    height: 3rem;
+    border-radius: 15px;
+}
+
+.fs-1 select {
+    width: 17rem;
+    height: 3rem;
+    border-radius: 15px;
+}
+
+/* ################## FECHA Y ARCHIVO ################## */
+.fecha input {
+    width: 17rem;
+    height: 3rem;
+    border-radius: 15px;
+}
+
+.archivo input {
+    width: 1000px;
+}
+
+/* ################## DESCRIPCION, PODERES, TIPO  ################## */
+.fs-3 {
+    display: flex;
+}
+
+.fs-3 div {
+    display: flex;
+    flex-direction: column;
+}
+
+.fs-3 hr {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 150%;
+    height: 17rem;
+    border-radius: 20px;
+    padding-top: 1rem;
+    font-size: 18px;
+}
+
+/* ################## BOTON ################## */
+form button {
+    width: 20rem;
+    height: 5rem;
+    background-color: #1CD1B0;
+    border-radius: 20px;
+    border: 0px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.hover-label {
+    position: relative;
+    bottom: 15px;
+    font-size: 18px;
+    color:red;
+}
+
+legend {
+    position: relative;
+    bottom: 10px;
+    font-size: 20px;
+}
+
+#tipoPersonaje1 {
+    box-shadow: none;
+    border: 0px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00669F;
+    color: #FFF9F9;
+}

@@ -3,26 +3,24 @@
 * {
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
-body {
-    width: 99.2vw;
-    background-image: url("./img/bg-simplify-section-desktop.svg");
-    margin: 0px;
-}
+
 
 /* ############## HEADER ############## */
 header {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    padding: 5px;
+    padding: 48px 160px;
 }
+
 
 header nav ul li {
     display: inline;
-    font-size: 15px;
-    padding: 1rem 1rem;
+    padding: 16px 16px;
 }
 
 header nav ul li a {
@@ -72,8 +70,12 @@ header button:hover,
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
+}
+
+.section-top button {
+    margin-top: 48px;
 }
 
 .section-top img {
@@ -82,7 +84,7 @@ header button:hover,
 
 .section-top h1 {
     font-size: 40px;
-    width: 65%;
+    width: 60%;
     font-weight: 700;
     color: #232C50;
 }
@@ -98,25 +100,31 @@ header button:hover,
     margin-top: 50px auto;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: 60%;
+    align-items: flex-start;
+    width: 70%;
     margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.section-middle article {
+    width: 100%;
 }
 
 .section-middle h2 {
     font-size: 30px;
     font-weight: 700;
-    width: 80%;
+    width: 60%;
     color: #232851;
+    margin-bottom: 32px;
 }
 
 .section-middle p {
     font-size: 15px;
-    width: 70%;
+    width: 45%;
 }
 
 .section-middle article:last-child {
-    width: 90%;
+    width: 100%;
 }
 
 .section-middle dt {
@@ -125,8 +133,10 @@ header button:hover,
 }
 
 .section-middle dd {
-    margin-left: 5rem;
+    margin-left: 80px;
     color: #B3B2B7;
+    width: 90%;
+
 }
 
 span button {
@@ -135,7 +145,7 @@ span button {
     border: 0px;
     height: 2.5rem;
     width: 4rem;
-    margin-right: 1rem;
+    margin-right: 16px;
     color: white;
 }
 
@@ -152,6 +162,7 @@ span button {
 .section-bottom h2 {
     font-size: 30px;
     color: #242E53;
+    margin-bottom: 80px;
 }
 
 .section-bottom article {
@@ -159,11 +170,18 @@ span button {
 }
 
 .reviews {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
     align-items: center;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.reviews img {
+    width: 15%;
+    position: relative;
+    bottom: 42px
 }
 
 .reviews h4 {
@@ -173,6 +191,8 @@ span button {
 
 .reviews p {
     color: #B9B9C1;
+    width: 85%;
+    text-align: center;
 }
 
 .reviews article {
@@ -248,9 +268,7 @@ span button {
 
 footer {
     height: 12rem;
-    background-color: #1E1E26;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    background-color: #1E1E26;    
 }
 
 footer section {
@@ -272,12 +290,12 @@ footer article:first-child {
 
 .sociales i {
     color: white;
-    padding: 0.3rem;
+    padding: 5px;
 }
 
 /* ############## FOOTER - NAVBAR ############## */
 .footer-nav {
-    margin-top: 1rem;
+    margin-top: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,7 +304,7 @@ footer article:first-child {
 
 .footer-nav li {
     list-style-type: none;
-    padding: 0.5rem;
+    padding: 8px;
 }
 
 .footer-nav a {
@@ -346,10 +364,16 @@ footer article:last-child p {
 
 @media(max-width: 375px) {
 
+    body {
+        /* width: 97vw;    */
+    }
+    p {
+        color: #B3B2B7;
+    }
     /* ############## HEADER ############## */
 
     header {
-        padding-top: 50px;
+        padding: 50px 0px;
     }
 
     .hamburguer {
@@ -360,7 +384,7 @@ footer article:last-child p {
         cursor: pointer;
     }
 
-    header ul {
+    header nav {
         display: none;
     }
 
@@ -372,15 +396,14 @@ footer article:last-child p {
     /* ############## SECTION TOP ############## */
 
     .section-top {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin-top: 48px;
+        margin-bottom: 48px;
         flex-direction: column-reverse;
         text-align: center;
     }
 
     .section-top h1 {
         width: 95vw;
-
     }
 
     .section-top img {
@@ -389,8 +412,8 @@ footer article:last-child p {
 
     .section-top p {
         width: 80vw;
-        margin: 2rem auto;
-        color: #B3B2B7;
+        margin: 32px auto;
+        
     }
 
     /* ############## SECTION MIDDLE ############## */
@@ -405,7 +428,8 @@ footer article:last-child p {
 
     .section-middle h2 {
         color: #232851;
-        margin: 1rem auto;
+        margin: 16px auto;
+        width: 80%;
     }
 
     .section-middle p {
@@ -414,8 +438,8 @@ footer article:last-child p {
     }
 
     .section-middle article:last-child {
-        margin-top: 3rem;
-        width: 95%;
+        margin-top: 48px;
+        width: 100%;
         text-align: start;
     }
 
@@ -425,8 +449,10 @@ footer article:last-child p {
     }
 
     .section-middle dd {
-        margin-left: 0;
-        margin-bottom: 2rem;
+        margin: 16px 32px 32px 32px;
+        margin-left: 16px;
+        margin-bottom: 32px;
+        width: 90%;
     }
 
     /* ############## SECTION BOTTOM ############## */
@@ -441,6 +467,15 @@ footer article:last-child p {
         text-align: center;
     }
 
+    .section-bottom img {
+        width: 25%;
+        bottom: 35px;
+    }
+
+    .carousel {
+        margin-top: 32px;
+    }
+
     .carousel-button {
         display: inline-block;
     }
@@ -453,7 +488,7 @@ footer article:last-child p {
         align-items: center;
         height: 20rem;
         text-align: center;
-        padding: 3rem;
+        padding: 48px;
     }
 
     .banner-bottom h2 {
@@ -470,6 +505,12 @@ footer article:last-child p {
     footer {
         height: 35rem;
         width: 100vw;
+
+    }
+
+    .footer-nav {
+        justify-content: space-around;
+        width: 100%
     }
 
     footer section {
@@ -488,6 +529,10 @@ footer article:last-child p {
 
     footer section article {
         position: relative;
+    }
+
+    footer section article:last-child {
+        align-items: center;
     }
 
     footer section article:last-child p {
